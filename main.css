@@ -1,0 +1,47 @@
+/* all elements */
+body{
+    padding: 0%;
+    margin: 0%;
+    background-image: url(./pexels-danielabsi-952670.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*{
+    font-family: poppins;
+}
+/* header */
+header{
+    padding-bottom: 100px;
+}
+header nav .p{
+    text-align: center;
+    margin: 50px 0px;
+}
+header nav .p span{
+    background-color: #000000;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    color: white;
+}
+/* section */
+
+section .reposetories{
+    text-align: center;
+    margin-top: 50px;
+}
+
+section .reposetories a{
+    text-decoration: none;
+    background-color: #000000;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    margin: 10px;
+    transition: .2s;
+}
+section .reposetories a:hover{
+    background-color: #ffffff;
+    color: black;
+}
