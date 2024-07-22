@@ -59,6 +59,18 @@ section .container .info h1,h2,h3{
     border-radius: 10px;
     text-align: center;
 }
+.info h1:hover{
+    background-color: #ffffff;
+    color: black;
+}
+.info h2:hover{
+    background-color: #ffffff;
+    color: black;
+}
+.info h3:hover{
+    background-color: #ffffff;
+    color: black;
+}
 section .container .info h1{
     font-size: 50px;
     padding: 10px;
@@ -72,14 +84,15 @@ section .container .info h3{
     padding: 10px;
 }
 section .container .projects .box{
-    border: 1px solid rgb(91, 27, 209);
+    width: 200px;
     padding: 30px;
     border-radius: 20px;
     text-align: center;
-    background-color: #ffffff;
-    background-image: url(./backforbox.jpg);
+    /* box-shadow: #ffffff 0px 0px 10px; */
+    backdrop-filter: blur(50px);
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 10px 0px;
 }
 section .container .projects .box .box-img img{
     width: 200px;
@@ -89,16 +102,47 @@ section .container .projects .box .box-img img{
     box-shadow: #ffffff 0px 0px 10px;
     backdrop-filter: blur(50px);
 }
-section .container .projects .box .p p{
+section .container .projects .box .p a{
     font-size: 20px;
-}
-section .container .projects .box .link a{
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    background-color: red;
     padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: #ffffff 0px 0px 10px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+section .container .projects .box .p a:hover{
+    background-color: #ffffff;
+    color: black;
+}
+/* footer */
+
+
+
+footer .container .social{
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
     border-radius: 10px;
+    margin-top: 30px;
+    position: fixed;
+    bottom: 0%;
+    right: 40%;
 }
 
-
+footer .container .social i{
+    color: #ffffff;
+    box-shadow: #ffffff 0px 0px 10px;
+    font-size: 50px;
+    margin: 0px 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+footer .container .social i:hover{
+    background-color: #ffffff;
+    color: black;
+}
